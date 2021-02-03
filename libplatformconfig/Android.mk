@@ -37,7 +37,6 @@ LOCAL_SRC_FILES += ConfigParser.cpp
 LOCAL_SRC_FILES += ConfigStore.cpp
 
 ####################
-ENABLE_CONFIGSTORE = true
 ifeq ($(ENABLE_CONFIGSTORE),true)
 LOCAL_CFLAGS += -DENABLE_CONFIGSTORE
 LOCAL_SHARED_LIBRARIES += libhidlbase
