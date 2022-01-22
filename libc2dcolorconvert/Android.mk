@@ -6,7 +6,8 @@ LOCAL_SRC_FILES := \
         C2DColorConverter.cpp
 
 LOCAL_C_INCLUDES := \
-    $(TARGET_OUT_HEADERS)/adreno
+    $(TARGET_OUT_HEADERS)/adreno \
+    vendor/qcom/opensource/display/sm8150/libcopybit
 
 
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
@@ -14,7 +15,7 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_HEADER_LIBRARIES := \
         libutils_headers \
         libhardware_headers \
-        display_intf_headers
+        display_headers
 
 LOCAL_SHARED_LIBRARIES := liblog libdl
 

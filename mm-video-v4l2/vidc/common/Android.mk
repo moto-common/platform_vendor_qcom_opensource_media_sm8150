@@ -21,8 +21,8 @@ libmm-vidc-def += -D_ANDROID_ICS_
 # ---------------------------------------------------------------------------------
 
 libmm-vidc-inc      := $(LOCAL_PATH)/inc
-libmm-vidc-inc      += $(TOP)/hardware/qcom/media/mm-core/inc
-libmm-vidc-inc      += $(TOP)/hardware/qcom/media/libc2dcolorconvert
+libmm-vidc-inc      += $(QCOM_MEDIA_ROOT)/mm-core/inc
+libmm-vidc-inc      += $(QCOM_MEDIA_ROOT)/libc2dcolorconvert
 libmm-vidc-inc      += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 libmm-vidc-inc      += $(TOP)/hardware/libhardware/include
 libmm-vidc-inc      += $(LIBION_HEADER_PATHS)
@@ -37,7 +37,7 @@ LOCAL_PRELINK_MODULE      := false
 LOCAL_SHARED_LIBRARIES    := liblog libcutils libdl
 
 LOCAL_HEADER_LIBRARIES := \
-        libutils_headers display_intf_headers
+        libutils_headers display_headers
 
 LOCAL_SRC_FILES   += src/vidc_common.cpp
 LOCAL_SRC_FILES   += src/vidc_vendor_extensions.cpp
