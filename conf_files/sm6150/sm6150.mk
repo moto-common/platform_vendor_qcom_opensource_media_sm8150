@@ -1,4 +1,4 @@
-CONFIG_PATH := vendor/qcom/opensource/media/$(qcom_platform)/conf_files/$(MSMSTEPPE)
+CONFIG_PATH := vendor/qcom/opensource/media/$(qcom_platform)/conf_files/$(SM6150)
 
 # Video feature flags
 
