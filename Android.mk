@@ -1,4 +1,4 @@
-ifneq ($(filter 4.14, $(KERNEL_VERSION)),)
+ifneq ($(filter 4.14, $(TARGET_KERNEL_VERSION)),)
 QCOM_MEDIA_ROOT := $(call my-dir)
 
 #Compile these for all targets under QCOM_BOARD_PLATFORMS list.
