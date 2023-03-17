@@ -1,6 +1,6 @@
 #MSM_VIDC_TARGET_LIST := msmnile
 
-ifeq ($(KERNEL_VERSION),4.14)
+ifeq ($(TARGET_KERNEL_VERSION),4.14)
 #MM_CORE
 MM_CORE := libmm-omxcore
 MM_CORE += libOmxCore
